@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*piksel perfect ilerlemek istersek kendi classlarımızı kullanabiliriz.*/
+/* @layer utilities{
+    .w-1265{
+        max-width :1265 px;
+    }
+} */
