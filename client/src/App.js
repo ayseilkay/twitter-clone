@@ -3,7 +3,6 @@ import Content from "./layout/Content";
 import Sidebar from "./layout/Sidebar";
 import Widgets from "./layout/Widgets";
 
-
 function App() {
   return (
     <Container>

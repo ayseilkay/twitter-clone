@@ -1,21 +1,21 @@
-import {firebase} from 'firebase';
-import "firebase/database";
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+// Import the functions you need from the SDKs you need
+import "firebase/compat/auth"
+import "firebase/compat/firestore"
+import 'firebase/database'
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 const firebaseConfig = {
-    apiKey: "AIzaSyB_8KwbTHmIDg-y5crFeL6bf34PZjOhkP4",
-    authDomain: "twitter-clone-5d001.firebaseapp.com",
-    projectId: "twitter-clone-5d001",
-    storageBucket: "twitter-clone-5d001.appspot.com",
-    messagingSenderId: "314720159779",
-    appId: "1:314720159779:web:43d2e0db46abf722ac8996",
-    measurementId: "G-MS2G635GF6"
-  };
-  
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+  apiKey: "AIzaSyB6HgEs5_wjNjW22HZ2e41nCv3v4FrWNb8",
+  authDomain: "twittercloneapp-21f50.firebaseapp.com",
+  projectId: "twittercloneapp-21f50",
+  storageBucket: "twittercloneapp-21f50.appspot.com",
+  messagingSenderId: "878665059214",
+  appId: "1:878665059214:web:0a99d8809dfdfbacf672df",
+  measurementId: "G-LEX2PWLVZB"
+};
 
-  const db = firebase.firestore();
-
-  export default db;
+// Initialize Firebase
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const db = firebaseApp.firestore();
+export default db;

@@ -4,6 +4,7 @@ const Svg= ({children,className})=>{
     return (<svg viewBox="0 0 24 24" className={`fill-current ${className}`}> {children}</svg>)
 }
 
+
 export const HomeIcon = ()=>{
     return (
         <Svg className="w-7 h-7">
